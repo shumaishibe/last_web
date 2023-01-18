@@ -1,0 +1,166 @@
+
+#print{
+  font-size:40px;
+  color: rgb(0, 138, 138);
+}
+#coment{
+  font-size: 20px;
+}
+#adbutton{
+  font-size: 17px;
+  font-weight: bold;
+  background-color: #ffffff;
+  color: rgb(0, 255, 255);
+}
+.title_box{
+    /* color: -webkit-linear-gradient(0deg, #ffffff, #00d5ff 40%, #ffffff);
+    text-decoration: underline; */
+    border-bottom: 5px solid linear-gradient(0deg, #ffffff, #00d5ff 40%, #ffffff);
+    height: 20px;
+    /* background-image: linear-gradient(transparent,2px, #ffffff, #00d5ff 40%, #ffffff);
+    position: fixed; */
+    /* background: -webkit-linear-gradient(0deg, #ffffff, #00d5ff 40%, #ffffff); */
+}
+.title{
+    /* margin-top: 0px;
+    top: -50px;
+    font-size: 40px;
+    display: left; */
+    position: fixed;
+    padding: 0.5rem 0 1rem;
+    margin-bottom: 0.5rem;
+    /* font-weight: bold; */
+    top: 0px;
+    font-size: 35px;
+    background-image: linear-gradient(135deg, #ffffff 0%, #00d5ff 50%, #ffffff 100%);
+    background-repeat: no-repeat;
+    background-size: 20rem 0.4rem;
+    background-position: bottom;
+}
+.tabs {
+    margin-top: 50px;
+    padding-bottom: 40px;
+    background-color: #fff;
+    width: 100%;
+    margin: 0 auto;
+}
+  
+  /*タブのスタイル*/
+  .tab_item {
+    width: calc(100%/6);
+    height: 50px;
+    background-color: #FFFFFF;
+    line-height: 50px;
+    font-size: 20px;
+    text-align: center;
+    color: #84e8f1;
+    display: block;
+    float: right;
+    text-align: center;
+    font-weight: bold;
+    /* transition: all 0.2s ease; */
+    /* box-shadow: 0 7px 34px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08); */
+  }
+  
+   .tab_item01 {
+    top: 30px;
+    right: calc(40%);
+    position: fixed;
+  }
+  
+  .tab_item02 {
+    top: 30px;
+    right: calc(22%);
+    position: fixed;
+  }
+  .tab_item03 {
+    top: 30px;
+    right: calc(5%);
+    position: fixed;
+  }
+  .tab_item:hover {
+      opacity: 0.75;
+      color: #ec64cf;
+  }
+  
+  /*ラジオボタンを全て消す*/
+  input[name="tab_item"] {
+    display:none;
+  }
+  
+  /*タブ切り替えの中身のスタイル*/
+  .tab_content {
+    display:none;
+    padding: 20px 2px 0;
+    clear: both;
+    overflow: hidden;
+  }
+  
+  .tab_content{
+    /* display: inline-block; */
+    margin: 80px 0 0 0;
+    position:  bottom;            /* 位置指定 */
+    animation: anime1 1s ease;      /* アニメーション指定 */
+  }
+
+  @keyframes anime1 {
+      0% {
+          opacity:  0;                /* 透明度指定 */
+          top: 50px;                  /* 位置指定 */
+      }
+      33% {
+          opacity:  0.5;                /* 透明度指定 */
+          top: 0;                     /* 位置指定 */
+      }
+      66%{
+          opacity:  1;                /* 透明度指定 */
+          top: 0;                     /* 位置指定 */
+      }
+  }
+  
+  /*選択されているタブのコンテンツのみを表示*/
+  #all:checked ~ #all_content,
+  #programming:checked ~ #programming_content,
+  #history:checked ~ #history_content,
+  #design:checked ~ #design_content {
+    display: block;
+  }
+  #red{ 
+    border-top: solid #00aaff;
+    border-width: 15px;
+    background: #aff8f8; 
+    position:absolute; 
+    bottom:0; 
+    height:100%;
+    width:100%; 
+    height:100px; 
+  }
+  
+  .text {
+    color: #424242;
+    font-family: Lato;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .text2 {
+    color: #424242;
+    font-family: Lato;
+    font-size: 20px;
+    text-align: center;
+    margin-top: -60px;
+  }
+  
+  .text3 {
+    color: #424242;
+    font-family: Lato;
+    font-size: 20px;
+    text-align: center;
+    margin-top: -20px;
+    float: center;
+  }
+  
+  #page-footer {
+    display: none !important;
+  }

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="scripts/main_script.css" rel="stylesheet">
+    <meta charset="utf-8" />
+    <title>住所検索アプリ</title>
+  </head>
+  <body>
+    <header class="title_box">
+        <!-- <div className="hero-body">
+          <div className="container">
+            <h1 class="title">飲食店検索アプリ</h1>
+          </div>
+        </div>
+      </header> -->
+
+      <h1 class="title">住所検索アプリ</h1>
+    </header>
+    <div class="wrapper">
+        <div class="tabs">
+            <input id="all" type="radio" name="tab_item" checked>
+            <label class="tab_item tab_item01" for="all"><i class="fas fa-rss"></i>　検索</label>
+    
+            <input id="programming" type="radio" name="tab_item">
+            <label class="tab_item tab_item02 " for="programming"><i class="fas fa-rss"></i>　履歴</label>
+    
+            <input id="history" type="radio" name="tab_item">
+            <label class="tab_item tab_item03 " for="history"><i class="fas fa-rss"></i>　使い方</label>
+    
+            <div class="tab_content" id="all_content">
+                <div id="content"></div>
+                <input id="coment" type="text"></input>
+                <button type="button" id="adbutton">住所検索</button>
+                <script type="module" src="/src/main.jsx"></script>
+                <div id="print"></div>
+                <img src="IMG_5482.png" width="500" alt="猫の写真">
+
+            </div>
+            <h3 class="tab_content" id="programming_content">
+                現在未実装
+            </h3>
+            <h3 class="tab_content" id="history_content">
+              検索ボックスに調べたい郵便番号入力し検索ボタンを押すことで検索をすることができます。<br>
+              また、ハイフンを入れた場合でも動作します。<br><br><br>
+              成功例(検索ボタンを押すと住所が出ます)<br>
+              <img src="説明1.png" width="500" alt="説明1">
+            </h3>
+        </div>
+    </div>
+    <footer id="red">
+      <h1 class="text">　</h1>
+      <h2 class="text2"><a href="http://zipcloud.ibsnet.co.jp/doc/api">今回使用したapi</a></h2>
+      <h2 class="text3">文理学部情報科学科2年5421066 石部秀真</h2>
+    </footer>
+  </body>
+</html>
